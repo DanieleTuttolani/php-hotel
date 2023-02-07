@@ -67,7 +67,7 @@
                     <tr>
                         <td><?= $hotel['name'] ?></td>
                         <td><?= $hotel['description'] ?></td>
-                        <td><?= $hotel['parking'] ?></td>
+                        <td> <?php if($hotel['parking']){echo 'Si';} elseif($hotel['parking']=== false){echo 'No';}  ?> </td>
                         <td><?= $hotel['vote'] ?></td>
                         <td><?= $hotel['distance_to_center'] ?></td>
                     </tr>
